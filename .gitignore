@@ -115,9 +115,9 @@ buildNumber.properties
 .classpath# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/reactFrontend/node_modules/*
-/reactFrontend/.pnp
-/reactFrontend/.pnp.js
+reactFrontend/node_modules/*
+reactFrontend/.pnp
+reactFrontend/.pnp.js
 
 # testing
 /coverage
