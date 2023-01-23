@@ -1,13 +1,17 @@
 import './App.css';
-import ListEmployee from './components/ListEmployee';
+import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ListEmployee />
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path='/employees' element={<Main />} />
+      </Routes>
+
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import EmployeeServices from '../services/EmployeeServices';
-import "./ListEmployee.scss"
+import "../styles/ListEmployee.scss"
 const ListEmployee = () => {
     const [employees, setEmployees] = useState([]);
 
@@ -11,9 +11,6 @@ const ListEmployee = () => {
             console.log(err)
         });
     }, []);
-    useEffect(() => {
-        console.log(employees);
-    }, [employees]);
     return (
         <section className='section section--employeeList'>
             <h1 className='h1 h1--employeeList'>Employee's List</h1>
